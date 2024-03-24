@@ -1,0 +1,10 @@
+@import 'src/shared/styles/variables.module.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: $primary;
+  padding: 0 40px;
+}

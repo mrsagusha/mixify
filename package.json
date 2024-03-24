@@ -1,0 +1,44 @@
+{
+  "name": "mixify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^14.1.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.66.1",
+    "react-hook-form": "^7.46.1",
+    "react-redux": "^8.1.2",
+    "axios": "^1.5.0",
+    "classnames": "^2.3.2",
+    "cookies-next": "^2.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.69",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.34.1",
+    "typescript": "^5.4.3",
+    "postcss-scss": "^4.0.8",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.2.1"
+  }
+}

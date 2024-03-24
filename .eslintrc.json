@@ -1,0 +1,134 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "next",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended",
+    "next/core-web-vitals",
+    "plugin:storybook/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["react", "jest"],
+  "rules": {
+    "no-unneeded-ternary": "error",
+    "eol-last": ["error", "always"],
+    "id-length": ["error", { "min": 3, "exceptions": ["id", "i", "j", "ms", "t", "_"], "properties": "never" }],
+    "react/react-in-jsx-scope": "off",
+    "no-empty-function": "off",
+    "jsx-quotes": ["error", "prefer-double"],
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-shadow": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+    "@typescript-eslint/method-signature-style": ["error", "method"],
+    "consistent-return": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "import/extensions": "off",
+    "import/no-cycle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import/prefer-default-export": "off",
+    "no-duplicate-imports": "error",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "linebreak-style": "off",
+    "@typescript-eslint/explicit-function-return-type": ["warn", { "allowTypedFunctionExpressions": false }],
+    "no-nested-ternary": "off",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-undef": "off",
+    "arrow-body-style": ["error", "as-needed"],
+    "@typescript-eslint/no-var-requires": "off",
+    "default-param-last": 0,
+    "object-curly-spacing": ["error", "always"],
+    "object-shorthand": "error",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
+    "react/no-unescaped-entities": "off",
+    "react/button-has-type": "off",
+    "react/prop-types": "off",
+    "react/require-default-props": "off",
+    "object-curly-newline": "off",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true,
+        "allowTaggedTemplates": true
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "types": ["boolean"],
+        "format": ["camelCase"],
+        "leadingUnderscore": "forbid",
+        "trailingUnderscore": "forbid",
+        "custom": {
+          "regex": "^has[A-Z].*|is[A-Z].|*have[A-Z].*|are[A-Z].*",
+          "match": true
+        }
+      }
+    ],
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".tsx", ".ts"]
+      }
+    ],
+    "react/function-component-definition": "off",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": "*", "next": "if" },
+      { "blankLine": "always", "prev": "*", "next": "try" }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["state"]
+      }
+    ],
+    "jest/expect-expect": "off",
+    "no-unused-vars": ["error", { "args": "after-used", "ignoreRestSiblings": false }]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "rules": {
+        "@typescript-eslint/explicit-function-return-type": ["error", { "allowTypedFunctionExpressions": false }],
+        "jest/consistent-test-it": ["error", { "fn": "test" }]
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "path": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import 'src/shared/styles/variables.module.scss';
+
+.wrapper {
+  width: 100%;
+  height: 320px;
+  background-color: #8D1AEF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  .layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: $layerIndex;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sideRow {
+    padding: 0 60px;
+  }
+}
