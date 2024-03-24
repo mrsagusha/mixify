@@ -3,6 +3,7 @@ $primary: #282828;
 $main: #161616;
 $white: white;
 $layerIndex: 1;
+$mainIndex: 2;
 
 
 :export {
@@ -11,4 +12,5 @@ $layerIndex: 1;
   main: #161616;
   white: $white;
   layerIndex: 1;
+  mainIndex: 2;
 }
