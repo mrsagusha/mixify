@@ -1,15 +1,14 @@
 'use client';
 
 import { useEffect, type FC, type PropsWithChildren, type ReactElement } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 import { Header } from '@/widgets/Header/Header';
 import { Footer } from '@/widgets/Footer/Footer';
 import { CLIENT_ID, REDIRECT_URL } from '@/lib/constants/userAuthorization';
-import { redirectToCodeFlow } from '@/lib/utils/redirectToCodeFlow';
+import { useActions } from '@/lib/hooks/useActions';
 
 import classes from './PageWrapper.module.scss';
-import { useSearchParams } from 'next/navigation';
-import { useActions } from '@/lib/hooks/useActions';
 
 const PageWrapper: FC<PropsWithChildren> = ({ children }): ReactElement => {
   const params = useSearchParams();
@@ -27,9 +26,7 @@ const PageWrapper: FC<PropsWithChildren> = ({ children }): ReactElement => {
   };
 
   useEffect(() => {
-    if (!code) {
-      redirectToCodeFlow(CLIENT_ID, REDIRECT_URL);
-    } else {
+    if (code) {
       userLogin(args);
     }
   }, []);

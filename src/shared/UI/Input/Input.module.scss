@@ -1,0 +1,27 @@
+@import 'src/shared/styles/variables.module.scss';
+
+.wrapper {
+  position: relative;
+
+  .input {
+    border: none;
+    border-radius: 32px;
+    padding: 10px 24px;
+    background-color: #333333;
+    outline: none;
+    color: $white;
+    width: 500px;
+  
+    &::placeholder {
+      color: #B8B8B8;
+    }
+  }
+  
+  .adornment {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 18%;
+    right: 24px;
+  }
+}
