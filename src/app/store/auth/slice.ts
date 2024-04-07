@@ -17,7 +17,9 @@ const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    auth: (): void => {},
+    logIn: (state): void => {
+      state.isAuthorized = true;
+    },
   },
   extraReducers: ({ addCase }): void => {
     addCase(userLogin.pending, (state): void => {
@@ -34,5 +36,7 @@ const authSlice = createSlice({
     });
   },
 });
+
+export const { logIn } = authSlice.actions;
 
 export default authSlice.reducer;

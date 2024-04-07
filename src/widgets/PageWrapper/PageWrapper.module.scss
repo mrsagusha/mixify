@@ -1,6 +1,8 @@
+@import '/src/shared//styles/variables.module.scss';
+
 .wrapper {
   display: flex;
-  flex-direction: column;
   height: 100vh;
+  background-color: $main;
   overflow: hidden;
 }

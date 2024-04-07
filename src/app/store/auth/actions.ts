@@ -1,4 +1,5 @@
-import { API_BASE } from '@/lib/constants/requestUrls';
+import { API_AUTH } from '@/lib/constants/requestUrls';
+import { setToLocalStorage } from '@/lib/utils/setToLocalStorage';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -10,18 +11,22 @@ interface UserLoginRequest {
 }
 
 interface UserLoginResponse {
-  access_token: string;
-  token_type: string;
-  scope: string;
-  expires_in: number;
-  refresh_token: string;
+  data: {
+    access_token: string;
+    token_type: string;
+    scope: string;
+    expires_in: number;
+    refresh_token: string;
+  };
 }
 
 const userLogin = createAsyncThunk<UserLoginResponse, UserLoginRequest>(
   'auth/login',
   async ({ code, clientId, codeVerifier, redirectUrl }): Promise<UserLoginResponse> => {
-    const data: UserLoginResponse = await axios.post(
-      `${API_BASE}/api/token`,
+    const {
+      data: { access_token, expires_in, refresh_token, token_type, scope },
+    }: UserLoginResponse = await axios.post(
+      `${API_AUTH}/api/token`,
       {
         grant_type: 'authorization_code',
         code,
@@ -36,7 +41,11 @@ const userLogin = createAsyncThunk<UserLoginResponse, UserLoginRequest>(
       }
     );
 
-    return data;
+    setToLocalStorage('token', access_token);
+    setToLocalStorage('refreshToken', refresh_token);
+    setToLocalStorage('expiresIn', String(expires_in));
+
+    return { access_token, expires_in, refresh_token, token_type, scope };
   }
 );
 

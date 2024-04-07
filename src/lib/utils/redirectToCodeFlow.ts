@@ -1,10 +1,10 @@
-import { API_BASE } from '@/lib/constants/requestUrls';
+import { API_AUTH } from '@/lib/constants/requestUrls';
 import { generateRandomString } from '@/lib/utils/generateRandomString';
 import { generateCodeChallenge } from '@/lib/utils/generateCodeChallenge';
 
 const redirectToCodeFlow = async (clientId: string, redirectUri: string): Promise<void> => {
-  const scope = 'user-read-private user-read-email';
-  const authUrl = new URL(`${API_BASE}/authorize`);
+  const scope = 'user-read-private user-read-email user-top-read user-read-recently-played';
+  const authUrl = new URL(`${API_AUTH}/authorize`);
   const codeVerifier = generateRandomString(64);
   const codeChallenge = await generateCodeChallenge(codeVerifier);
 

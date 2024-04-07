@@ -2,7 +2,7 @@ import { PageWrapper } from '@/widgets/PageWrapper/PageWrapper';
 
 import { StoreProvider } from '@/app/store/ReduxProvider';
 
-import '@/shared/styles/globals.css';
+import '@/shared/styles/globals.scss';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

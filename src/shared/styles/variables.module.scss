@@ -1,22 +1,21 @@
-$purple: #8D1AEF;
-$darkPurple: #7436A7;
-$primary: #282828;
-$secondary: #333333;
-$main: #161616;
-$whiteDark: #B8B8B8;
+$main: #3A3558;
+$secondary: #3A3C60;
 $white: white;
-$layerIndex: 1;
-$mainIndex: 2;
-
+$whiteSecondary: #696983;
+$whiteSubTitle: #C2C2C2;
+$primary: #2D2E37;
+$blue: #5569D0;
+$darkBlue: #13324A;
+$darkMain: #121738;
 
 :export {
-  purple: #8D1AEF;
-  darkPurple: #7436A7;
-  primary: #282828;
-  secondary: #333333;
-  main: #161616;
-  whiteDark: #B8B8B8;
-  white: $white;
-  layerIndex: 1;
-  mainIndex: 2;
+  main: #3A3558;
+  secondary: #3A3C60;
+  whiteSecondary: #696983;
+  white: white;
+  whiteSubTitle: #C2C2C2;
+  primary: #2D2E37;
+  blue: #5569D0;
+  darkBlue: #13324A;
+  darkMain: #121738;
 }

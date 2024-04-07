@@ -1,6 +1,8 @@
-@import 'src/shared/styles/variables.module.scss';
+@import '/src/shared//styles/variables.module.scss';
 
 .button {
+  height: 40px;
+  width: auto;
   border: none;
   border-radius: 32px;
   padding: 10px 24px;
@@ -8,22 +10,28 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  color: $white;
-  transition: color 0.2s, background-color 0.2s;
+  transition: .2s;
 
   &.contained {
-    background-color: $purple;
-
+    background: linear-gradient(90deg, rgba(19,50,74,1) 9%, rgba(10,64,106,1) 100%);
+    
     &:hover {
-      background-color: $darkPurple;
+      background: linear-gradient(90deg, rgba(20,58,87,1) 9%, rgba(10,71,119,1) 100%);
     }
   }
 
   &.round {
-    border: 1px solid $purple;
 
     &:hover {
-      background-color: $purple;
     }
+  }
+
+  &.texted {
+    padding: 0;
+  }
+
+  &.underscore {
+    padding: 0;
+    text-decoration: underline;
   }
 }

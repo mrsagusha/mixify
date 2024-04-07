@@ -1,0 +1,13 @@
+@import '/src/shared/styles/variables.module.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+  .title {
+    font-size: 3rem;
+    color: $primary;
+  }
+}

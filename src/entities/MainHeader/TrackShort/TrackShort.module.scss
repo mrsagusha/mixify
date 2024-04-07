@@ -1,0 +1,55 @@
+@import '/src/shared//styles/variables.module.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .button {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .trackWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .imageWrapper {
+      position: relative;
+      width: 58px;
+      height: 58px;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+
+
+      .play {
+        position: absolute;
+        z-index: 2;
+        top: 20%;
+        left: 20%;
+        opacity: 0;
+        transition: .2s;
+      }
+
+      &:hover .play {
+        opacity: 1;
+      }
+    }
+
+    .trackInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .track {
+        font-weight: 500;
+      }
+
+      .artist {
+        color: $whiteSubTitle;
+      }
+    }
+  }
+}
