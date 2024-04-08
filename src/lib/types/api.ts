@@ -1,6 +1,6 @@
-import type { Image } from '@/lib/types/image';
+import type { ImageType } from '@/lib/types/image';
 
-type ItemType = 'artists' | 'artist' | 'track' | 'album';
+type ItemType = 'artists' | 'artist' | 'track' | 'album' | 'playlist' | 'user';
 
 type AlbumType = 'album';
 
@@ -50,6 +50,29 @@ interface UserTopItemsResponse {
   total: number;
 }
 
+interface FeaturedPlaylistsResponse {
+  message: string;
+  playlists: {
+    href: string;
+    items: Playlist[];
+    limit: number;
+    next: string;
+    offset: number;
+    previous: string | null;
+    total: number;
+  };
+}
+
+interface FeaturedPlaylistsRequestParams {
+  limit?: number;
+  offset?: number;
+  locale?: string;
+}
+
+interface ExternalUrls {
+  spotify: string;
+}
+
 interface UserTopItem {
   external_urls: {
     spotify: string;
@@ -61,7 +84,7 @@ interface UserTopItem {
   genres: string[];
   href: string;
   id: string;
-  images: Image[];
+  images: ImageType[];
   name: string;
   popularity: number;
   type: ItemType;
@@ -69,9 +92,7 @@ interface UserTopItem {
 }
 
 interface Artist {
-  externals_urls: {
-    spotify: string;
-  };
+  externals_urls: ExternalUrls;
   href: string;
   id: string;
   name: string;
@@ -83,12 +104,10 @@ interface Album {
   album_type: AlbumType;
   artists: Artist[];
   available_markets: string[];
-  external_urls: {
-    spotify: string;
-  };
+  external_urls: ExternalUrls;
   href: string;
   id: string;
-  images: Image[];
+  images: ImageType[];
   name: string;
   release_date: string;
   release_date_precision: string;
@@ -97,4 +116,43 @@ interface Album {
   uri: string;
 }
 
-export type { ProfileData, UserTopItemsRequestParams, UserTopItem, UserTopItemsResponse, ItemType, Artist, Album };
+interface Playlist {
+  collaborative: boolean;
+  description: string;
+  externalUrls: ExternalUrls;
+  href: string;
+  id: string;
+  images: ImageType[];
+  name: string;
+  owner: User;
+  primary_color: string;
+  public: false;
+  snapshot_id: string;
+  tracks: {
+    href: string;
+    total: number;
+  };
+  type: ItemType;
+  uri: string;
+}
+
+interface User {
+  display_name: string;
+  external_urls: ExternalUrls;
+  href: string;
+  id: string;
+  type: ItemType;
+  uri: string;
+}
+
+export type {
+  ProfileData,
+  UserTopItemsRequestParams,
+  UserTopItem,
+  UserTopItemsResponse,
+  ItemType,
+  Artist,
+  Album,
+  FeaturedPlaylistsResponse,
+  FeaturedPlaylistsRequestParams,
+};

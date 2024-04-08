@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  .imgeWrapper {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+}

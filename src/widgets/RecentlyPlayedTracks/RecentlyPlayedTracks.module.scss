@@ -1,22 +1,27 @@
 @import '/src/shared//styles/variables.module.scss';
 
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding-bottom: 20px;
-
-  .button {
-    font-weight: 400;
-    color: $blue;
-  }
-}
-
-.tracksWrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  
+    .button {
+      font-weight: 400;
+      color: $blue;
+    }
+  }
+  
+  .tracksWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }

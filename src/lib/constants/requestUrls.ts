@@ -6,5 +6,14 @@ const GET_PROFILE = '/me';
 const GET_NEW_RELEASES = '/browse/new-releases';
 const GET_USER_TOP_ITEMS = '/me/top';
 const GET_RECENTLY_PLAYED_TRACKS = '/me/player/recently-played';
+const GET_FETURED_PLAYLISTS = '/browse/featured-playlists';
 
-export { API_BASE, API_AUTH, GET_PROFILE, GET_NEW_RELEASES, GET_USER_TOP_ITEMS, GET_RECENTLY_PLAYED_TRACKS };
+export {
+  API_BASE,
+  API_AUTH,
+  GET_PROFILE,
+  GET_NEW_RELEASES,
+  GET_USER_TOP_ITEMS,
+  GET_RECENTLY_PLAYED_TRACKS,
+  GET_FETURED_PLAYLISTS,
+};

@@ -497,24 +497,51 @@ button.swiper-pagination-bullet {
   font-size: 3rem;
   color: #2D2E37;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/MainHeader/TrackShort/TrackShort.module.scss ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.TrackShort_wrapper__zrQ_S {
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/TrackShort/TrackShort.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.TrackShort_wrapper__ZLO7M {
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
 }
-.TrackShort_wrapper__zrQ_S .TrackShort_button___Xd2i {
+.TrackShort_wrapper__ZLO7M::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #d9dbf6;
+  transition: left 0.2s ease;
+}
+.TrackShort_wrapper__ZLO7M:hover::before {
+  left: 0;
+}
+.TrackShort_wrapper__ZLO7M:hover .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO .TrackShort_play__hZ3um {
+  opacity: 1;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_button__V9_0u {
   font-size: 1.5rem;
   font-weight: 500;
+  transition: 0s;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  z-index: 1;
 }
-.TrackShort_wrapper__zrQ_S .TrackShort_trackWrapper__ghbhE {
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 10px 15px;
 }
-.TrackShort_wrapper__zrQ_S .TrackShort_trackWrapper__ghbhE .TrackShort_imageWrapper__pcgtz {
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO {
   position: relative;
   width: 58px;
   height: 58px;
@@ -522,7 +549,7 @@ button.swiper-pagination-bullet {
   overflow: hidden;
   cursor: pointer;
 }
-.TrackShort_wrapper__zrQ_S .TrackShort_trackWrapper__ghbhE .TrackShort_imageWrapper__pcgtz .TrackShort_play__qCQZ7 {
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO .TrackShort_play__hZ3um {
   position: absolute;
   z-index: 2;
   top: 20%;
@@ -530,40 +557,42 @@ button.swiper-pagination-bullet {
   opacity: 0;
   transition: 0.2s;
 }
-.TrackShort_wrapper__zrQ_S .TrackShort_trackWrapper__ghbhE .TrackShort_imageWrapper__pcgtz:hover .TrackShort_play__qCQZ7 {
-  opacity: 1;
-}
-.TrackShort_wrapper__zrQ_S .TrackShort_trackWrapper__ghbhE .TrackShort_trackInfo__yR260 {
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.TrackShort_wrapper__zrQ_S .TrackShort_trackWrapper__ghbhE .TrackShort_trackInfo__yR260 .TrackShort_track__mcufj {
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 .TrackShort_track__7emFB {
   font-weight: 500;
+  z-index: 1;
 }
-.TrackShort_wrapper__zrQ_S .TrackShort_trackWrapper__ghbhE .TrackShort_trackInfo__yR260 .TrackShort_artist__T2RrP {
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 .TrackShort_artist__KfSU4 {
   color: #C2C2C2;
+  z-index: 1;
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/RecentlyPlayedTracks/RecentlyPlayedTracks.module.scss ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecentlyPlayedTracks_header__tdu55 {
+.RecentlyPlayedTracks_wrapper__5FuRU {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_header__tdu55 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
-  padding-bottom: 20px;
 }
-.RecentlyPlayedTracks_header__tdu55 .RecentlyPlayedTracks_button__UhBy5 {
+.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_header__tdu55 .RecentlyPlayedTracks_button__UhBy5 {
   font-weight: 400;
   color: #5569D0;
 }
-
-.RecentlyPlayedTracks_tracksWrapper__2y3s8 {
+.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_tracksWrapper__2y3s8 {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/Player/Player.module.scss ***!
@@ -647,6 +676,58 @@ button.swiper-pagination-bullet {
   bottom: -50px;
   border-radius: 0 0 25px 25px;
 }
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/Playlist/Playlist.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Playlist_wrapper__N27OT {
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.Playlist_wrapper__N27OT .Playlist_imgeWrapper__Qlopo {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.Playlist_wrapper__N27OT .Playlist_name__zZBtH {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/RecommendedPlaylistst/RecommendedPlaylists.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecommendedPlaylists_wrapper__nvrSK {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 430px;
+  overflow: hidden;
+}
+.RecommendedPlaylists_wrapper__nvrSK::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 16px -45px 32px -30px white;
+  z-index: 5;
+}
+.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_title__gTbA0 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  align-items: center;
+}
+.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_playlists__eDFlf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/MainContent/MainContent.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -717,7 +798,10 @@ button.swiper-pagination-bullet {
   color: white;
   text-shadow: -5px 5px 12px rgba(45, 46, 55, 0.8);
 }
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test2__s_Uz3 {
+.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_sideContent__Glqtd {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 30%;
 }
 .MainContent_wrapper__2uQnn .MainContent_mainRolled__V5jrW {

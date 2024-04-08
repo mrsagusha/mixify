@@ -1,7 +1,7 @@
-interface Image {
+interface ImageType {
   url: string;
   height: number;
   width: number;
 }
 
-export type { Image };
+export type { ImageType };

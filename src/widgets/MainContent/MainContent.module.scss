@@ -75,7 +75,10 @@
         }
       }
 
-      .test2 {
+      .sideContent {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
         width: 30%;
       }
     }

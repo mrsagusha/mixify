@@ -11,6 +11,7 @@ import { MainHeader } from '@/entities/MainHeader/MainHeader';
 import { useGetUserTopItemsQuery } from '@/app/store/api/apiSlice';
 import { RecentlyPlayedTracks } from '@/widgets/RecentlyPlayedTracks/RecentlyPlayedTracks';
 import { Player } from '@/widgets/Player/Player';
+import { RecommendedPlaylists } from '@/widgets/RecommendedPlaylistst/RecommendedPlaylists';
 
 import classes from './MainContent.module.scss';
 
@@ -18,7 +19,7 @@ const MainContent = (): ReactElement => {
   const isUserAuthorized = useAppSelector((state) => state.auth.isAuthorized);
   const isUnderlayVisible = useAppSelector((state) => state.underlay.isUnderlayVisible);
 
-  const { data, isLoading } = useGetUserTopItemsQuery(
+  const { data: topItems, isLoading } = useGetUserTopItemsQuery(
     {
       type: 'artists',
       limit: 20,
@@ -33,7 +34,7 @@ const MainContent = (): ReactElement => {
   return (
     <section className={classes.wrapper}>
       <div className={classes.underlay}>
-        <Player image={data?.items[0].images[0].url} />
+        <Player image={topItems?.items[0].images[0].url} />
         <div className={`${classes.main} ${isUnderlayVisible ? classes.mainRolled : ''}`}>
           <MainHeader isUnderlayVisible={isUnderlayVisible} />
           <div className={classes.content}>
@@ -50,9 +51,9 @@ const MainContent = (): ReactElement => {
                   speed={1000}
                   className={classes.swiper}
                 >
-                  {data?.items.map(({ images, name }) => {
+                  {topItems?.items.map(({ images, name, id }) => {
                     return (
-                      <SwiperSlide className={classes.slide}>
+                      <SwiperSlide className={classes.slide} key={id}>
                         <div className={classes.slideContent} style={{ backgroundImage: `url(${images[0].url})` }}>
                           <div className={classes.buttomContent}>
                             <p className={classes.name}>{name}</p>
@@ -64,8 +65,9 @@ const MainContent = (): ReactElement => {
                 </Swiper>
               </div>
             </div>
-            <div className={classes.test2}>
+            <div className={classes.sideContent}>
               <RecentlyPlayedTracks />
+              <RecommendedPlaylists />
             </div>
           </div>
         </div>

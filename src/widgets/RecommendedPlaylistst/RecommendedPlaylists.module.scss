@@ -1,0 +1,31 @@
+@import '/src/shared//styles/variables.module.scss';
+
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 430px;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 16px -45px 32px -30px white;
+    z-index: 5;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-items: center;
+  }
+
+  .playlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+} 
