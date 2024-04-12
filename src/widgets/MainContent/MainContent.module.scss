@@ -1,90 +1,34 @@
 @import '/src/shared//styles/variables.module.scss';
 
-.wrapper {
-  width: 100%;
-  padding: 10px;
 
-  .underlay {
-    position: relative;
-    background-color: $secondary;
-    height: 100%;
-    border-radius: 25px;
-  }
+.sectionsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: scroll;
 
-  .main {
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    padding: 40px;
-    transition: width 0.75s ease;
-
-    .content {
-      display: flex;
-      gap: 60px;
-
-      .test1 {
-        width: 70%;
-
-        .display {
-          width: 50%;
-          height: 320px;
-          border-radius: 25px;
-          overflow: hidden;
-
-          .swiper {
-            width: 100%;
-            height: 100%;
-          }
-
-          .slide {
-            position: relative;
-            width: 100%;
-            height: 100%;
-
-            .slideContent {
-              display: flex;
-              justify-content: space-between;
-              align-items: end;
-              width: 100%;
-              height: 100%;
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-
-              .buttomContent {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: end;
-                padding: 20px;
-
-                .name {
-                  font-size: 3rem;
-                  font-weight: 500;
-                  color: white;
-                  text-shadow: -5px 5px 12px rgba(45,46,55,0.8);
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .sideContent {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        width: 30%;
-      }
+  &::-webkit-scrollbar {
+    width: 0px;
+      background-color: $white;
     }
   }
+    
 
-  .mainRolled {
-    width: 70%;
+.sideContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 32%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    box-shadow: inset 0px -10px 10px -1px white;
+    z-index: 1;
   }
 }
+  

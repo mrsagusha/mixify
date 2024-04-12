@@ -1,13 +1,13 @@
 import type { ReactElement } from 'react';
 
 import { Button } from '@/shared/UI/Button/Button';
-import { useGetUserRecentlyPlayedTrancksQuery } from '@/app/store/api/apiSlice';
+import { useGetUserRecentlyPlayedTracksQuery } from '@/app/store/api/apiSlice';
 import { TrackShort } from '@/entities/TrackShort/TrackShort';
 
 import classes from './RecentlyPlayedTracks.module.scss';
 
 const RecentlyPlayedTracks = (): ReactElement => {
-  const { data } = useGetUserRecentlyPlayedTrancksQuery({ limit: 4, after: 0 });
+  const { data } = useGetUserRecentlyPlayedTracksQuery({ limit: 4, after: 0 });
 
   return (
     <div className={classes.wrapper}>

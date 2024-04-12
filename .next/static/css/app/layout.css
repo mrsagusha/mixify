@@ -48,6 +48,7 @@
   margin: 0;
   padding: 0;
   line-height: 1;
+  color: #2D2E37;
 }
 
 .swiper-pagination-bullet {
@@ -142,12 +143,394 @@
   margin-top: auto;
   margin-bottom: 20px;
 }
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/Player/Player.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Player_wrapper__jscmR {
+  position: absolute;
+  bottom: 15%;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 440px;
+  background-color: #121738;
+  border-radius: 25px;
+  padding: 0px;
+}
+.Player_wrapper__jscmR .Player_imageWrapper__B17v6 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 280px;
+  border-radius: 50px;
+  background-image: url("/maxresdefault.jpg");
+  background-position: 60% 50%;
+  box-shadow: inset 0px 0px 20px 20px rgb(18, 23, 56);
+}
+.Player_wrapper__jscmR .Player_player__2X9zd {
+  width: 100%;
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_track__a1O2Q {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_track__a1O2Q .Player_name__DsOMr {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_track__a1O2Q .Player_artist__67NAm {
+  color: white;
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_button__PjP9L {
+  height: auto;
+  padding: 0;
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_mainControls__o8ogc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_mainControls__o8ogc .Player_playButton__hyA8e {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
+}
+.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_mainControls__o8ogc .Player_play__9BI3N {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  left: -6px;
+  top: -6px;
+}
+.Player_wrapper__jscmR .Player_progressBar__L7s7O {
+  position: absolute;
+  width: 90%;
+  height: 50px;
+  background-color: #272642;
+  bottom: -50px;
+  border-radius: 0 0 25px 25px;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/shared/UI/Input/Input.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Input_wrapper__nAfCt {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 2px rgba(105, 105, 131, 0.1);
+  padding: 10px;
+}
+.Input_wrapper__nAfCt .Input_input__zkjq1 {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+.Input_wrapper__nAfCt .Input_input__zkjq1::placeholder {
+  color: #C2C2C2;
+}
+.Input_wrapper__nAfCt .Input_adornament__dYfFG {
+  position: absolute;
+  left: 10px;
+  top: 20%;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/features/SearchInput/SearchInput.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.SearchInput_input__NpORe {
+  width: 400px;
+}
+
+.SearchInput_magnify__XWhci {
+  margin-right: 10px;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/MainHeader/MainHeader.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.MainHeader_header__pNh1l {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.MainHeader_header__pNh1l .MainHeader_title___ZXWz {
+  font-size: 3rem;
+  color: #2D2E37;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/TrackShort/TrackShort.module.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.TrackShort_wrapper__ZLO7M {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: background-color 0.2s ease;
+}
+.TrackShort_wrapper__ZLO7M:hover {
+  background-color: #e5e7f4;
+}
+.TrackShort_wrapper__ZLO7M:hover .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO .TrackShort_play__hZ3um {
+  opacity: 1;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_button__V9_0u {
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: 0s;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO .TrackShort_play__hZ3um {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left: 20%;
+  opacity: 0;
+  transition: 0.2s;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 .TrackShort_track__7emFB {
+  font-weight: 500;
+  z-index: 1;
+}
+.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 .TrackShort_artist__KfSU4 {
+  color: #C2C2C2;
+  z-index: 1;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/RecentlyPlayedTracks/RecentlyPlayedTracks.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecentlyPlayedTracks_wrapper__5FuRU {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_header__tdu55 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_header__tdu55 .RecentlyPlayedTracks_button__UhBy5 {
+  font-weight: 400;
+  color: #5569D0;
+}
+.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_tracksWrapper__2y3s8 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/Playlist/Playlist.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Playlist_wrapper__N27OT {
+  display: flex;
+  flex-direction: column;
+  max-width: 160px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.Playlist_wrapper__N27OT .Playlist_imgeWrapper__Qlopo {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.Playlist_wrapper__N27OT .Playlist_name__zZBtH {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/RecommendedPlaylistst/RecommendedPlaylists.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.RecommendedPlaylists_wrapper__nvrSK {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+.RecommendedPlaylists_wrapper__nvrSK::-webkit-scrollbar {
+  width: 0px;
+  background-color: white;
+}
+.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_header__9w9cR {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_header__9w9cR .RecommendedPlaylists_title__gTbA0 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  align-items: center;
+}
+.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_header__9w9cR .RecommendedPlaylists_button__w79EF {
+  font-weight: 400;
+  color: #5569D0;
+}
+.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_playlists__eDFlf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/Sidebar/Sidebar.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Sidebar_wrapper__ATxNY {
+  position: absolute;
+  bottom: 0;
+  width: 32%;
+  height: 88%;
+  border-left: 1px solid #C2C2C2;
+  padding: 20px;
+  background-color: white;
+  z-index: 2;
+  right: -700px;
+  transition: right 0.2s ease;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_close__aS7LT {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  width: 0;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_header__pmPyH {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_header__pmPyH .Sidebar_image__xDnwT {
+  border-radius: 50%;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_header__pmPyH .Sidebar_information__lratx {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_header__pmPyH .Sidebar_information__lratx .Sidebar_type__KJoE_ {
+  color: #C2C2C2;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_header__pmPyH .Sidebar_information__lratx .Sidebar_name__6claZ {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_header__pmPyH .Sidebar_information__lratx .Sidebar_play__Q5pnc {
+  width: 0;
+}
+
+.Sidebar_shown__Kx7fj {
+  right: 0;
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/PageWrapper/PageWrapper.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.PageWrapper_wrapper__igEWT {
+.PageWrapper_pageWrapper__VcgeU {
   display: flex;
   height: 100vh;
   background-color: #3A3558;
   overflow: hidden;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT {
+  width: 100%;
+  padding: 10px;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 {
+  position: relative;
+  background-color: #3A3C60;
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 .PageWrapper_search__ENcYJ {
+  position: absolute;
+  z-index: 5;
+  right: 40px;
+  top: 40px;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 .PageWrapper_main__6M_GK {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  padding: 40px;
+  transition: right 0.75s ease;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 .PageWrapper_main__6M_GK .PageWrapper_content__oqaK2 {
+  display: flex;
+  gap: 60px;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 .PageWrapper_main__6M_GK .PageWrapper_content__oqaK2 .PageWrapper_mainContent__rg7j1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+  overflow: hidden;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 .PageWrapper_main__6M_GK .PageWrapper_content__oqaK2 .PageWrapper_sideContent__jl3vC {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 32%;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 .PageWrapper_main__6M_GK .PageWrapper_content__oqaK2 .PageWrapper_sideContent__jl3vC::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  box-shadow: inset 0px -10px 10px -1px white;
+  z-index: 1;
+}
+.PageWrapper_pageWrapper__VcgeU .PageWrapper_wrapper__igEWT .PageWrapper_underlay__6d4o9 .PageWrapper_mainRolled__heOeR {
+  right: -32%;
 }

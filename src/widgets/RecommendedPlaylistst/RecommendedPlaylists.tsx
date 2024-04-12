@@ -1,18 +1,24 @@
+'use client';
+
 import type { ReactElement } from 'react';
 
 import { useGetFeaturedPlaylistsQuery } from '@/app/store/api/apiSlice';
+import { Playlist } from '@/entities/Playlist/Playlist';
+import { Button } from '@/shared/UI/Button/Button';
 
 import classes from './RecommendedPlaylists.module.scss';
-import { Playlist } from '@/entities/Playlist/Playlist';
 
 const RecommendedPlaylists = (): ReactElement => {
-  const { data: playlists } = useGetFeaturedPlaylistsQuery({ limit: 10 });
-
-  console.log(playlists);
+  const { data: playlists } = useGetFeaturedPlaylistsQuery({ limit: 12 });
 
   return (
     <div className={classes.wrapper}>
-      <p className={classes.title}>Featured playlists</p>
+      <div className={classes.header}>
+        <p className={classes.title}>Featured playlists</p>
+        <Button className={classes.button} type="button" variation="underscore">
+          See all
+        </Button>
+      </div>
       <div className={classes.playlists}>
         {playlists?.playlists.items.map(({ id, name, description, images }): ReactElement => {
           return <Playlist key={id} name={name} description={description} images={images} />;

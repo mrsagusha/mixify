@@ -1,16 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { userLogin } from '@/app/store/auth/actions';
 
 interface AuthInitialState {
   isUnderlayVisible: boolean;
 }
 
 const initialState: AuthInitialState = {
-  isUnderlayVisible: true,
+  isUnderlayVisible: false,
 };
 
 const underlaySlice = createSlice({
-  name: 'auth',
+  name: 'underlay',
   initialState,
   reducers: {
     showUnderlay: (state): void => {

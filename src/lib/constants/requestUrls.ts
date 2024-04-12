@@ -7,6 +7,7 @@ const GET_NEW_RELEASES = '/browse/new-releases';
 const GET_USER_TOP_ITEMS = '/me/top';
 const GET_RECENTLY_PLAYED_TRACKS = '/me/player/recently-played';
 const GET_FETURED_PLAYLISTS = '/browse/featured-playlists';
+const GET_ARTIST = '/artists/';
 
 export {
   API_BASE,
@@ -16,4 +17,5 @@ export {
   GET_USER_TOP_ITEMS,
   GET_RECENTLY_PLAYED_TRACKS,
   GET_FETURED_PLAYLISTS,
+  GET_ARTIST,
 };

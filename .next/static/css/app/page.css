@@ -422,6 +422,47 @@ button.swiper-pagination-bullet {
 }
 
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/Display/Display.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Display_display__4UL8k {
+  width: 50%;
+  height: 320px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.Display_display__4UL8k .Display_swiper__VyQXA {
+  width: 100%;
+  height: 100%;
+}
+.Display_display__4UL8k .Display_slide__B2BXn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Display_display__4UL8k .Display_slide__B2BXn .Display_slideContent__pIqTC {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.Display_display__4UL8k .Display_slide__B2BXn .Display_slideContent__pIqTC .Display_buttomContent__T5aWJ {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px;
+}
+.Display_display__4UL8k .Display_slide__B2BXn .Display_slideContent__pIqTC .Display_buttomContent__T5aWJ .Display_name__m_cgM {
+  font-size: 3rem;
+  font-weight: 500;
+  color: white;
+  text-shadow: -5px 5px 12px rgba(45, 46, 55, 0.8);
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/shared/UI/Button/Button.module.scss ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .Button_button__e2m9h {
@@ -449,361 +490,115 @@ button.swiper-pagination-bullet {
   padding: 0;
   text-decoration: underline;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/shared/UI/Input/Input.module.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Input_wrapper__nAfCt {
-  display: flex;
-  align-items: center;
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px 2px rgba(105, 105, 131, 0.1);
-  padding: 10px;
-}
-.Input_wrapper__nAfCt .Input_input__zkjq1 {
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 1rem;
-}
-.Input_wrapper__nAfCt .Input_input__zkjq1::placeholder {
-  color: #C2C2C2;
-}
-.Input_wrapper__nAfCt .Input_adornament__dYfFG {
-  position: absolute;
-  left: 10px;
-  top: 20%;
-}
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/features/SearchInput/SearchInput.module.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.SearchInput_input__NpORe {
-  width: 400px;
-}
-
-.SearchInput_magnify__XWhci {
-  margin-right: 10px;
-}
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/MainHeader/MainHeader.module.scss ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/ArtistCard/ArtistCard.module.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.MainHeader_header__pNh1l {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 20px;
-}
-.MainHeader_header__pNh1l .MainHeader_title___ZXWz {
-  font-size: 3rem;
-  color: #2D2E37;
-}
-/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/TrackShort/TrackShort.module.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.TrackShort_wrapper__ZLO7M {
+.ArtistCard_wrapper__aUCuF {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  height: 170px;
+  min-width: 218px;
   border-radius: 25px;
   overflow: hidden;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.TrackShort_wrapper__ZLO7M::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: #d9dbf6;
-  transition: left 0.2s ease;
-}
-.TrackShort_wrapper__ZLO7M:hover::before {
-  left: 0;
-}
-.TrackShort_wrapper__ZLO7M:hover .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO .TrackShort_play__hZ3um {
+.ArtistCard_wrapper__aUCuF:hover .ArtistCard_details__cwEJ1 .ArtistCard_play__fdMKy {
   opacity: 1;
 }
-.TrackShort_wrapper__ZLO7M .TrackShort_button__V9_0u {
-  font-size: 1.5rem;
-  font-weight: 500;
-  transition: 0s;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-right: 15px;
-  margin-bottom: 10px;
-  z-index: 1;
-}
-.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi {
+.ArtistCard_wrapper__aUCuF .ArtistCard_details__cwEJ1 {
+  position: absolute;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 15px;
-}
-.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO {
-  position: relative;
-  width: 58px;
-  height: 58px;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-}
-.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_imageWrapper__hFDXO .TrackShort_play__hZ3um {
-  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  width: 195px;
+  min-height: 70px;
+  border-radius: 25px;
   z-index: 2;
-  top: 20%;
-  left: 20%;
-  opacity: 0;
-  transition: 0.2s;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  align-items: center;
+  padding: 0 10px;
 }
-.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 {
+.ArtistCard_wrapper__aUCuF .ArtistCard_details__cwEJ1 .ArtistCard_play__fdMKy {
+  position: absolute;
+  right: 55px;
+  bottom: 20px;
+  background: inherit;
+  width: 0;
+  opacity: 0;
+}
+.ArtistCard_wrapper__aUCuF .ArtistCard_details__cwEJ1 .ArtistCard_playIcon__Hadrq {
+  width: 50px;
+  height: 50px;
+}
+.ArtistCard_wrapper__aUCuF .ArtistCard_details__cwEJ1 .ArtistCard_info__YxI8Z {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 .TrackShort_track__7emFB {
+.ArtistCard_wrapper__aUCuF .ArtistCard_details__cwEJ1 .ArtistCard_info__YxI8Z .ArtistCard_name__R6BdY {
+  font-size: 1rem;
   font-weight: 500;
-  z-index: 1;
+  color: white;
 }
-.TrackShort_wrapper__ZLO7M .TrackShort_trackWrapper__jOhhi .TrackShort_trackInfo__Qvsd1 .TrackShort_artist__KfSU4 {
-  color: #C2C2C2;
-  z-index: 1;
+.ArtistCard_wrapper__aUCuF .ArtistCard_details__cwEJ1 .ArtistCard_info__YxI8Z .ArtistCard_note__M8nDj {
+  font-size: 0.875rem;
+  color: white;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/RecentlyPlayedTracks/RecentlyPlayedTracks.module.scss ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecentlyPlayedTracks_wrapper__5FuRU {
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/ItemsSection/ItemsSection.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ItemsSection_wrapper__ueEl2 {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
-.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_header__tdu55 {
+.ItemsSection_wrapper__ueEl2 .ItemsSection_header__4TGVE {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.ItemsSection_wrapper__ueEl2 .ItemsSection_header__4TGVE .ItemsSection_title__oE8__ {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_header__tdu55 .RecentlyPlayedTracks_button__UhBy5 {
+.ItemsSection_wrapper__ueEl2 .ItemsSection_header__4TGVE .ItemsSection_button__2N23L {
   font-weight: 400;
   color: #5569D0;
 }
-.RecentlyPlayedTracks_wrapper__5FuRU .RecentlyPlayedTracks_tracksWrapper__2y3s8 {
+.ItemsSection_wrapper__ueEl2 .ItemsSection_itemsWrapper__yHEmI {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/Player/Player.module.scss ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Player_wrapper__jscmR {
-  position: absolute;
-  bottom: 15%;
-  left: 7%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-  height: 440px;
-  background-color: #121738;
-  border-radius: 25px;
-  padding: 0px;
-}
-.Player_wrapper__jscmR .Player_imageWrapper__B17v6 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 280px;
-  height: 280px;
-  border-radius: 50px;
-  background-image: url("/maxresdefault.jpg");
-  background-position: 60% 50%;
-  box-shadow: inset 0px 0px 20px 20px rgb(18, 23, 56);
-}
-.Player_wrapper__jscmR .Player_player__2X9zd {
-  width: 100%;
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_track__a1O2Q {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_track__a1O2Q .Player_name__DsOMr {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_track__a1O2Q .Player_artist__67NAm {
-  color: white;
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 10px 20px;
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_button__PjP9L {
-  height: auto;
-  padding: 0;
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_mainControls__o8ogc {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_mainControls__o8ogc .Player_playButton__hyA8e {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
-}
-.Player_wrapper__jscmR .Player_player__2X9zd .Player_controls__If3OV .Player_mainControls__o8ogc .Player_play__9BI3N {
-  position: absolute;
-  width: 62px;
-  height: 62px;
-  left: -6px;
-  top: -6px;
-}
-.Player_wrapper__jscmR .Player_progressBar__L7s7O {
-  position: absolute;
-  width: 90%;
-  height: 50px;
-  background-color: #3A3558;
-  bottom: -50px;
-  border-radius: 0 0 25px 25px;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/entities/Playlist/Playlist.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.Playlist_wrapper__N27OT {
-  display: flex;
-  flex-direction: column;
-  max-width: 160px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-.Playlist_wrapper__N27OT .Playlist_imgeWrapper__Qlopo {
-  position: relative;
-  width: 160px;
-  height: 160px;
-  border-radius: 25px;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-.Playlist_wrapper__N27OT .Playlist_name__zZBtH {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/RecommendedPlaylistst/RecommendedPlaylists.module.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.RecommendedPlaylists_wrapper__nvrSK {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-height: 430px;
-  overflow: hidden;
-}
-.RecommendedPlaylists_wrapper__nvrSK::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 16px -45px 32px -30px white;
-  z-index: 5;
-}
-.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_title__gTbA0 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  align-items: center;
-}
-.RecommendedPlaylists_wrapper__nvrSK .RecommendedPlaylists_playlists__eDFlf {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 14px;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/MainContent/MainContent.module.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-.MainContent_wrapper__2uQnn {
-  width: 100%;
-  padding: 10px;
-}
-.MainContent_wrapper__2uQnn .MainContent_underlay__Fa6hd {
-  position: relative;
-  background-color: #3A3C60;
-  height: 100%;
-  border-radius: 25px;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y {
-  position: absolute;
-  right: 0;
+.MainContent_sectionsWrapper__aKZB7 {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  overflow-y: scroll;
+}
+.MainContent_sectionsWrapper__aKZB7::-webkit-scrollbar {
+  width: 0px;
   background-color: white;
-  height: 100%;
-  width: 100%;
-  border-radius: 25px;
-  padding: 40px;
-  transition: width 0.75s ease;
 }
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ {
-  display: flex;
-  gap: 60px;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test1__XL7Fc {
-  width: 70%;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test1__XL7Fc .MainContent_display__eL383 {
-  width: 50%;
-  height: 320px;
-  border-radius: 25px;
-  overflow: hidden;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test1__XL7Fc .MainContent_display__eL383 .MainContent_swiper__xVr_R {
-  width: 100%;
-  height: 100%;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test1__XL7Fc .MainContent_display__eL383 .MainContent_slide__wKhQh {
+
+.MainContent_sideContent__Glqtd {
   position: relative;
-  width: 100%;
-  height: 100%;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test1__XL7Fc .MainContent_display__eL383 .MainContent_slide__wKhQh .MainContent_slideContent__Ia1Is {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test1__XL7Fc .MainContent_display__eL383 .MainContent_slide__wKhQh .MainContent_slideContent__Ia1Is .MainContent_buttomContent__ouac0 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  padding: 20px;
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_test1__XL7Fc .MainContent_display__eL383 .MainContent_slide__wKhQh .MainContent_slideContent__Ia1Is .MainContent_buttomContent__ouac0 .MainContent_name__86i0U {
-  font-size: 3rem;
-  font-weight: 500;
-  color: white;
-  text-shadow: -5px 5px 12px rgba(45, 46, 55, 0.8);
-}
-.MainContent_wrapper__2uQnn .MainContent_main__YEi9y .MainContent_content__ZA7aZ .MainContent_sideContent__Glqtd {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 30%;
+  width: 32%;
 }
-.MainContent_wrapper__2uQnn .MainContent_mainRolled__V5jrW {
-  width: 70%;
+.MainContent_sideContent__Glqtd::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  box-shadow: inset 0px -10px 10px -1px white;
+  z-index: 1;
 }

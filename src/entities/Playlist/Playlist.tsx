@@ -1,3 +1,5 @@
+'use client';
+
 import type { ReactElement, FC } from 'react';
 import Image from 'next/image';
 
@@ -19,7 +21,12 @@ const Playlist: FC<PlaylistProps> = ({ images, name, description }): ReactElemen
         <Image src={images[0].url} layout="fill" alt={name} />
       </div>
       <p className={classes.name}>{makeFirstLetterCapital(name)}</p>
-      <p>{makeFirstLetterCapital(description).replace(/<a\b[^>]*>(.*?)<\/a>/g, '')}</p>
+      <p>
+        {makeFirstLetterCapital(description)
+          .replace(/<a\b[^>]*>(.*?)<\/a>/g, '')
+          .replace(/.*?\.(?=.*?<)/g, '')
+          .replace(/(\.)([^\.]*)$/g, '')}
+      </p>
     </div>
   );
 };

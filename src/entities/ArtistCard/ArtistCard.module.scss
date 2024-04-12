@@ -1,0 +1,63 @@
+@import '/src/shared//styles/variables.module.scss';
+
+.wrapper {
+  position: relative;
+  height: 170px;
+  min-width: 218px;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover .details .play {
+    opacity: 1;
+  }
+
+  .details {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    left: 5%;
+    width: 195px;
+    min-height: 70px;
+    border-radius: 25px;
+    z-index: 2;
+    backdrop-filter: blur(10px); 
+    align-items: center;
+    padding: 0 10px;
+
+    .play {
+      position: absolute;
+      right: 55px;
+      bottom: 20px;
+      background: inherit;
+      width: 0;
+      opacity: 0;
+    }
+
+    .playIcon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      
+      .name {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $white;
+      }
+
+      .note {
+        font-size: 0.875rem;
+        color: $white;
+      }
+    }
+  }
+}

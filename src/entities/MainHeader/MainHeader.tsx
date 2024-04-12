@@ -24,7 +24,6 @@ const MainHeader: FC<MainHeaderProps> = ({ isUnderlayVisible }): ReactElement =>
       >
         click
       </Button>
-      <SearchInput />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const makeFirstLetterCapital = (string: string) => {
+const makeFirstLetterCapital = (string: string): string => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
 

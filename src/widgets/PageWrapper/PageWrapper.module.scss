@@ -1,8 +1,76 @@
 @import '/src/shared//styles/variables.module.scss';
 
-.wrapper {
+.pageWrapper {
   display: flex;
   height: 100vh;
   background-color: $main;
   overflow: hidden;
+
+  .wrapper {
+    width: 100%;
+    padding: 10px;
+
+    .underlay {
+      position: relative;
+      background-color: $secondary;
+      height: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+    
+      .search {
+        position: absolute;
+        z-index: 5;
+        right: 40px;
+        top: 40px;
+      }
+
+      .main {
+        position: absolute;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        padding: 40px;
+        transition: right 0.75s ease;
+
+        .content {
+          display: flex;
+          gap: 60px;
+
+          .mainContent {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 70%;
+            overflow: hidden;
+          }
+
+          .sideContent {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 32%;
+      
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: 20px;
+              box-shadow: inset 0px -10px 10px -1px white;
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+      .mainRolled {
+        right: -32%;
+      }
+    }
+  }
 }

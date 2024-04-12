@@ -1,13 +1,15 @@
 import { configureStore, type Middleware } from '@reduxjs/toolkit';
 import authReducer from '@/app/store/auth/slice';
-import underlayReducer from '@/app/store/underlay/slice';
+import windowsReducer from '@/app/store/underlay/slice';
+import sidebarReducer from '@/app/store/sidebar/slice';
 import { mixifyApi } from './api/apiSlice';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      underlay: underlayReducer,
+      windows: windowsReducer,
       auth: authReducer,
+      sidebar: sidebarReducer,
       [mixifyApi.reducerPath]: mixifyApi.reducer,
     },
     middleware: (getDefaultMiddleware): Middleware[] =>

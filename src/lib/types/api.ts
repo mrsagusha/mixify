@@ -33,6 +33,12 @@ interface ProfileData {
   uri: string;
 }
 
+interface RecentlyPlayedTracksRequestParams {
+  limit?: number;
+  before?: number;
+  after?: number;
+}
+
 interface UserTopItemsRequestParams {
   type: ItemType;
   timeRange: string;
@@ -40,7 +46,27 @@ interface UserTopItemsRequestParams {
   offset: number;
 }
 
-interface UserTopItemsResponse {
+interface RecentlyPlayedTracks {
+  cursors: {
+    after: string;
+    before: string;
+  };
+  href: string;
+  items: {
+    context: {
+      type: ItemType;
+      external_urls: ExternalUrls;
+      href: string;
+      uri: string;
+    };
+    played_at: string;
+    track: Track;
+  }[];
+  limit: number;
+  next: string | null;
+}
+
+interface UserTopItems {
   href: string;
   items: UserTopItem[];
   limit: number;
@@ -91,11 +117,20 @@ interface UserTopItem {
   uri: string;
 }
 
+interface Followers {
+  href: string;
+  total: number;
+}
+
 interface Artist {
-  externals_urls: ExternalUrls;
+  extrernal_urls: ExternalUrls;
+  followers: Followers;
+  genres: string[];
   href: string;
   id: string;
+  images: ImageType[];
   name: string;
+  popularity: number;
   type: ItemType;
   uri: string;
 }
@@ -145,14 +180,38 @@ interface User {
   uri: string;
 }
 
+interface Track {
+  album: Album;
+  artists: Artist[];
+  available_markets: string[];
+  disc_number: number;
+  duration_ms: number;
+  explicit: boolean;
+  external_ids: {
+    isrc: string;
+  };
+  external_urls: ExternalUrls;
+  href: string;
+  id: string;
+  is_local: boolean;
+  name: string;
+  popularity: number;
+  preview_url: string;
+  track_number: number;
+  type: ItemType;
+  uri: string;
+}
+
 export type {
   ProfileData,
   UserTopItemsRequestParams,
   UserTopItem,
-  UserTopItemsResponse,
+  UserTopItems,
   ItemType,
   Artist,
   Album,
   FeaturedPlaylistsResponse,
   FeaturedPlaylistsRequestParams,
+  RecentlyPlayedTracksRequestParams,
+  RecentlyPlayedTracks,
 };
