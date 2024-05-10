@@ -24,8 +24,8 @@ const sidebarSlice = createSlice({
     hideSidebar: (state): void => {
       state.isSidebarVisible = false;
     },
-    setIsLoading: (state): void => {
-      state.isItemLoading = true;
+    setIsLoading: (state, action): void => {
+      state.isItemLoading = action.payload;
     },
     setSelectedItem: (state, action): void => {
       state.selectedItem = action.payload;

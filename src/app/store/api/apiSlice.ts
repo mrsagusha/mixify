@@ -48,10 +48,22 @@ export const mixifyApi = createApi({
       query: (id) => ({
         url: `${GET_ARTIST}${id}`,
       }),
+      keepUnusedDataFor: 0,
     }),
     getRelatedArtists: query({
       query: (id) => ({
         url: `${GET_ARTIST}${id}/related-artists`,
+      }),
+    }),
+    getArtistsTopTracks: query({
+      query: (id) => ({
+        url: `${GET_ARTIST}${id}/top-tracks`,
+      }),
+    }),
+    getArtistsAlbums: query({
+      query: ({ id, limit = 10, offset = 0, include_groups = 'single,appears_on', market = 'US' }) => ({
+        url: `${GET_ARTIST}${id}/albums`,
+        params: { limit, offset, include_groups, market },
       }),
     }),
   }),
@@ -64,4 +76,6 @@ export const {
   useGetFeaturedPlaylistsQuery,
   useGetRelatedArtistsQuery,
   useGetArtistQuery,
+  useGetArtistsTopTracksQuery,
+  useGetArtistsAlbumsQuery,
 } = mixifyApi;

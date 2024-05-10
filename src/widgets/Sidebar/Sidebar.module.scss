@@ -19,31 +19,58 @@
     width: 0;
   }
 
-  .header {
-    width: 100%;
+  .content {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 
-    .image {
-      border-radius: 50%;
+    .header {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+  
+      .image {
+        border-radius: 50%;
+      }
+  
+      .information {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+  
+        .type {
+          color: $whiteSubTitle;
+        }
+  
+        .name {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+  
+        .play {
+          width: 0;
+        }
+      }
     }
-
-    .information {
+  
+    .topTracks {
       display: flex;
       flex-direction: column;
-      gap: 5px;
+    }
 
-      .type {
-        color: $whiteSubTitle;
-      }
+    .swiper {
+      width: 100%;
 
-      .name {
-        font-size: 1.5rem;
-        font-weight: 500;
-      }
+      .slide {
+        background-position: center;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
 
-      .play {
-        width: 0;
+        img {
+          display: block;
+          width: 100%;
+        }
       }
     }
   }

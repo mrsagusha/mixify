@@ -14,9 +14,10 @@ import { setIsLoading, setSelectedItem, showSidebar } from '@/app/store/sidebar/
 import classes from './MainContent.module.scss';
 
 const MainContent = (): ReactElement => {
-  const isUserAuthorized = useAppSelector((state) => state.auth.isAuthorized);
-
   const dispatch = useAppDispatch();
+
+  const isUserAuthorized = useAppSelector((state) => state.auth.isAuthorized);
+  const selectedItem = useAppSelector((state) => state.sidebar.selectedItem);
 
   const { data: topItems } = useGetUserTopItemsQuery(
     {
@@ -32,20 +33,23 @@ const MainContent = (): ReactElement => {
 
   const { data: relatedArtists } = useGetRelatedArtistsQuery(topItems?.items[0].id);
 
-  const [getArtist, { data, isLoading }] = mixifyApi.endpoints.getArtist.useLazyQuery();
+  const [getArtist, { data }] = mixifyApi.endpoints.getArtist.useLazyQuery();
 
   const handleGetArtist = async (id: string): Promise<void> => {
     dispatch(showSidebar());
-    dispatch(setIsLoading());
 
-    await getArtist(id);
+    if (selectedItem?.id !== id) {
+      dispatch(setIsLoading(true));
+
+      await getArtist(id);
+    }
   };
 
   useEffect(() => {
-    if (!isLoading && data) {
+    if (data) {
       dispatch(setSelectedItem(data));
     }
-  }, [isLoading]);
+  }, [data]);
 
   return (
     <>
