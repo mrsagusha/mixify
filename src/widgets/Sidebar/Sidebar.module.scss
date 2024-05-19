@@ -1,7 +1,9 @@
-@import '/src/shared//styles/variables.module.scss';
+@import '/src/shared/styles/variables.module.scss';
+@import '/src/shared/styles/mixins.module.scss';
 
 .wrapper {
   position: absolute;
+  overflow-y: scroll;
   bottom: 0;;
   width: 32%;
   height: 88%;
@@ -11,6 +13,20 @@
   z-index: 2;
   right: -700px;
   transition: right 0.2s ease;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $white;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $whiteSecondary;
+    border-radius: 5px;
+  }
 
   .close {
     position: absolute;
@@ -56,20 +72,44 @@
     .topTracks {
       display: flex;
       flex-direction: column;
+
+      .title {
+        @include sectionTitle;
+      }
     }
 
-    .swiper {
-      width: 100%;
+    .albums {
+      .title {
+        @include sectionTitle;
+      }
 
-      .slide {
-        background-position: center;
-        background-size: cover;
-        width: 180px;
-        height: 180px;
+      .swiper {
+        width: 100%;
+  
+        .slideWrapper {
+          background-position: center;
+          background-size: cover;
+          width: 180px;
+          height: fit-content;
+  
+         .slide {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
 
-        img {
-          display: block;
-          width: 100%;
+          .name {
+            font-weight: 500;
+          }
+
+          .releaseDate {
+            color: $whiteSubTitle;
+          }
+
+          img {
+            display: block;
+            width: 100%;
+          }
+         }
         }
       }
     }
@@ -77,5 +117,5 @@
 }
 
 .shown {
-  right: 0;
+  right: 5px;
 }

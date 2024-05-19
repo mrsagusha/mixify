@@ -897,6 +897,7 @@ button.swiper-pagination-bullet {
   \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 .Sidebar_wrapper__ATxNY {
   position: absolute;
+  overflow-y: scroll;
   bottom: 0;
   width: 32%;
   height: 88%;
@@ -906,6 +907,17 @@ button.swiper-pagination-bullet {
   z-index: 2;
   right: -700px;
   transition: right 0.2s ease;
+}
+.Sidebar_wrapper__ATxNY::-webkit-scrollbar {
+  width: 10px;
+}
+.Sidebar_wrapper__ATxNY::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 5px;
+}
+.Sidebar_wrapper__ATxNY::-webkit-scrollbar-thumb {
+  background: #696983;
+  border-radius: 5px;
 }
 .Sidebar_wrapper__ATxNY .Sidebar_close__aS7LT {
   position: absolute;
@@ -945,22 +957,46 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: column;
 }
-.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_swiper__EV5z_ {
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_topTracks__oXCXz .Sidebar_title__JqEz_ {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2D2E37;
+  padding-bottom: 10px;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_albums__n9uJj .Sidebar_title__JqEz_ {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #2D2E37;
+  padding-bottom: 10px;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_albums__n9uJj .Sidebar_swiper__EV5z_ {
   width: 100%;
 }
-.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_swiper__EV5z_ .Sidebar_slide__9T31N {
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_albums__n9uJj .Sidebar_swiper__EV5z_ .Sidebar_slideWrapper__oi__W {
   background-position: center;
   background-size: cover;
   width: 180px;
-  height: 180px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_swiper__EV5z_ .Sidebar_slide__9T31N img {
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_albums__n9uJj .Sidebar_swiper__EV5z_ .Sidebar_slideWrapper__oi__W .Sidebar_slide__9T31N {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_albums__n9uJj .Sidebar_swiper__EV5z_ .Sidebar_slideWrapper__oi__W .Sidebar_slide__9T31N .Sidebar_name__6claZ {
+  font-weight: 500;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_albums__n9uJj .Sidebar_swiper__EV5z_ .Sidebar_slideWrapper__oi__W .Sidebar_slide__9T31N .Sidebar_releaseDate__J0mm_ {
+  color: #C2C2C2;
+}
+.Sidebar_wrapper__ATxNY .Sidebar_content__QHod6 .Sidebar_albums__n9uJj .Sidebar_swiper__EV5z_ .Sidebar_slideWrapper__oi__W .Sidebar_slide__9T31N img {
   display: block;
   width: 100%;
 }
 
 .Sidebar_shown__Kx7fj {
-  right: 0;
+  right: 5px;
 }
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/widgets/PageWrapper/PageWrapper.module.scss ***!

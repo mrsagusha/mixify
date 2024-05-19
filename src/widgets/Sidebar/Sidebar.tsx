@@ -14,7 +14,7 @@ import { Loader } from '@/shared/UI/Loader/Loader';
 import { useGetArtistsAlbumsQuery, useGetArtistsTopTracksQuery } from '@/app/store/api/apiSlice';
 import { TrackShort } from '@/entities/TrackShort/TrackShort';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 import classes from './Sidebar.module.scss';
 
@@ -35,8 +35,6 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarVisible }): ReactElement => {
     offset: 0,
     include_groups: 'album',
   });
-
-  console.log(albums);
 
   useEffect(() => {
     if (!areTracksLoading) {
@@ -75,32 +73,21 @@ const Sidebar: FC<SidebarProps> = ({ isSidebarVisible }): ReactElement => {
           </div>
         </div>
         <div className={classes.topTracks}>
+          <p className={classes.title}>Popular tracks</p>
           {topTracks?.tracks.slice(0, 5).map(({ name, duration_ms, artists, album }, index: number) => (
             <TrackShort key={index} album={album} name={name} artists={artists} index={index} duration={duration_ms} />
           ))}
         </div>
-        <div>
-          <Swiper
-            effect={'coverflow'}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={'auto'}
-            coverflowEffect={{
-              rotate: 50,
-              stretch: 0,
-              modifier: 1,
-              slideShadows: true,
-            }}
-            modules={[EffectCoverflow, Pagination]}
-            className={classes.swiper}
-          >
+        <div className={classes.albums}>
+          <p className={classes.title}>Popular albums</p>
+          <Swiper slidesPerView={3} spaceBetween={30} modules={[Pagination]} className={classes.swiper}>
             {albums?.items.map(({ images, name, release_date }) => {
               return (
-                <SwiperSlide className={classes.slide}>
-                  <div>
-                    <img src={images[0].url} alt="" />
-                    <p>{name}</p>
-                    <p>{release_date}</p>
+                <SwiperSlide className={classes.slideWrapper}>
+                  <div className={classes.slide}>
+                    <Image src={images[0].url} width={150} height={150} alt={name} />
+                    <p className={classes.name}>{name}</p>
+                    <p className={classes.releaseDate}>{release_date.slice(0, 4)}</p>
                   </div>
                 </SwiperSlide>
               );

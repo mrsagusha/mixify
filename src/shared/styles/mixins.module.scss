@@ -1,0 +1,8 @@
+@import '/src/shared//styles/variables.module.scss';
+
+@mixin sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $primary;
+  padding-bottom: 10px;
+}
